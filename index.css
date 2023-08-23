@@ -95,17 +95,20 @@ body {
 
 /* transitions */
 #project{
-    transform: translateX(200%);
-    transition: transform 0.6s ease;
+    transform: translateX(50%);
+    transition: transform 0.6s ease,opacity 0.6s ease;
     box-shadow: 6px 6px 2px 1px chocolate;
+    opacity: 0;
 }
 
 #project:nth-of-type(even){
-    transform: translateX(-200%);
+    transform: translateX(-50%);
+    opacity: 0;
 }
 
 #project.show{
     transform: translate(0);
+    opacity: 1;
 }
 
 #education{
