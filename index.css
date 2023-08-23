@@ -10,10 +10,11 @@ body {
 }
 
 #profilePhoto{
-    height: 80vh;
+    max-height: 80vh;
     border-radius: 30%;
     border: 5px solid chocolate;
     margin-bottom: 4vh;
+    max-width: 80%;
 }
 
 #hr{
@@ -153,19 +154,10 @@ body {
 
 /* responsiveness */
 
-@media screen and (min-width: 731px ){
+@media all and (max-width: 587px ){
     #projectImage{
-        max-width: 60vh;
+        width: 300px;
+        padding-bottom: 10px;
     }
-    #project,#education,#skill{
-        margin: auto;
-        max-width: 80%;
-        margin: auto;
-    }
-    body{
-        background-color: #232323;
-        width: 100%;
-        overflow-x: hidden;
-    }
-}
+} 
 
