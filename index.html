@@ -246,7 +246,7 @@
         });
         slide()
         function slide(){
-            const triggerBottom=window.innerHeight/10*7
+            const triggerBottom=window.innerHeight-10
             projects.forEach((project,idx)=>{
                 const boxTop = project.getBoundingClientRect().top;
                 if(boxTop<triggerBottom){
