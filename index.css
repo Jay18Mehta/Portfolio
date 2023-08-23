@@ -1,0 +1,171 @@
+/* dissable scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+#imageDiv{
+    background-color: #232323;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+#profilePhoto{
+    height: 80vh;
+    border-radius: 30%;
+    border: 5px solid chocolate;
+    margin-bottom: 4vh;
+}
+
+#hr{
+    border-bottom: 10px solid black;
+    opacity: 1;
+}
+
+#projectsDiv,#projects,#educationDiv,#educations,#skillsDiv,#skills,#contactDiv{
+    background-color: #232323;
+    padding-bottom: 5vh;
+    margin: auto;
+}
+
+#project,#education{
+    margin-top: 5vh;
+    background-color: coral;
+    /* background-color: #949cb0; */
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 12px 4px 12px 4px;
+}
+
+#projectImage{
+    max-height: 255px;
+}
+
+#accordionBody{
+    background-color: chocolate ;
+}
+#accordionHeader{
+ background-color: coral;
+}
+
+#form{
+    background-color: black;
+    color: wheat;
+    max-width: 375px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 15vh;
+    box-shadow: 6px 6px 2px 1px chocolate;
+}
+#submit{
+    background-color: coral;
+}
+#projectsBtn{
+    background-color: black;
+    color: wheat;
+}
+
+#navButton{
+ color: wheat;
+}
+#footerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 450px;
+    left: 50%;
+    translate:-50%;
+    height: 60px;
+    background-color: #000000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; 
+}
+
+#contactInfo{
+    font-size: small;
+}
+
+#projectsHeading,#skillsHeading,#educationHeading,#ContactHeading{
+    color: wheat;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* transitions */
+#project{
+    transform: translateX(200%);
+    transition: transform 0.6s ease;
+    box-shadow: 6px 6px 2px 1px chocolate;
+}
+
+#project:nth-of-type(even){
+    transform: translateX(-200%);
+}
+
+#project.show{
+    transform: translate(0);
+}
+
+#education{
+    transform: translateY(50%);
+    transition: all 0.6s ease;
+    opacity: 0;
+    box-shadow: 6px 6px 2px 1px chocolate;
+}
+
+#education.show{
+    transform: translate(0);
+    opacity: 1;
+}
+
+/* hover effect */
+
+#project:hover{
+    box-shadow: 10px 10px 2px 1px chocolate;
+    transform: scale(1.05);
+}
+
+#education:hover{
+    box-shadow: 10px 10px 2px 1px chocolate;
+    transform: scale(1.1);
+}
+
+#projectsBtn:hover{
+    background-color: black;
+    color: white;
+    border:2px solid rgb(21, 200, 231);
+}
+
+#navButton:hover{
+ color: white;
+ /* color:linear-gradient(to right, red, purple); */
+ border-bottom: 1px solid blue;
+}
+
+#icon{
+    transform: translateY(3px);
+}
+
+#icon:hover{
+    transform: translateY(0px);
+}
+
+/* responsiveness */
+
+@media screen and (min-width: 731px ){
+    #projectImage{
+        max-width: 60vh;
+    }
+    #project,#education,#skill{
+        margin: auto;
+        max-width: 80%;
+        margin: auto;
+    }
+    body{
+        background-color: #232323;
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
