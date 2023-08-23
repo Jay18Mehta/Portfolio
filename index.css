@@ -1,6 +1,7 @@
 /* dissable scrollbar */
 body {
     overflow-x: hidden;
+    color-scheme: only light;
 }
 
 #imageDiv{
@@ -95,19 +96,21 @@ body {
 
 /* transitions */
 #project{
-    transform: translateX(50%);
+    transform-origin: bottom right;
+    transform: rotate(-60deg);
     transition: transform 0.6s ease,opacity 0.6s ease;
-    box-shadow: 6px 6px 2px 1px chocolate;
+    box-shadow: 6px 6px 2px 1px rgba(0,0,0,0.5);
     opacity: 0;
 }
 
 #project:nth-of-type(even){
-    transform: translateX(-50%);
+    transform-origin: bottom left;
+    transform: rotate(60deg);
     opacity: 0;
 }
 
 #project.show{
-    transform: translate(0);
+    transform: rotate(0deg);
     opacity: 1;
 }
 
@@ -115,7 +118,7 @@ body {
     transform: translateY(50%);
     transition: all 0.6s ease;
     opacity: 0;
-    box-shadow: 6px 6px 2px 1px chocolate;
+    box-shadow: 6px 6px 2px 1px rgba(0,0,0,0.5);
 }
 
 #education.show{
@@ -126,19 +129,19 @@ body {
 /* hover effect */
 
 #project:hover{
-    box-shadow: 10px 10px 2px 1px chocolate;
+    box-shadow: 10px 10px 2px 1px rgba(0,0,0,0.8);
     transform: scale(1.05);
 }
 
 #education:hover{
-    box-shadow: 10px 10px 2px 1px chocolate;
+    box-shadow: 10px 10px 2px 1px rgba(0,0,0,0.8);
     transform: scale(1.1);
 }
 
 #projectsBtn:hover{
     background-color: black;
     color: white;
-    border:2px solid rgb(21, 200, 231);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #navButton:hover{
