@@ -96,15 +96,15 @@ body {
 
 /* transitions */
 #project{
-    transform-origin: bottom right;
+    /* transform-origin: bottom right;
     transform: rotate(-60deg);
-    transition: transform 0.6s ease,opacity 0.6s ease,scale 0.6s ease;
+    transition: transform 0.6s ease,opacity 0.6s ease,scale 0.6s ease; */
     box-shadow: 6px 6px 2px 1px rgba(0,0,0,0.5);
-    opacity: 0;
-    scale: 0.5;
+    /* opacity: 0;
+    scale: 0.5; */
 }
 
-#project:nth-of-type(even){
+/* #project:nth-of-type(even){
     transform-origin: bottom left;
     transform: rotate(60deg);
 }
@@ -113,7 +113,7 @@ body {
     transform: rotate(0deg);
     opacity: 1;
     scale: 1;
-}
+} */
 
 #education{
     transform: translateY(50%);
