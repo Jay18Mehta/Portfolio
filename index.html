@@ -199,36 +199,20 @@
             <form action="https://formsubmit.co/65b93319b28a31ad6e4423df5177a10f" method="POST" target="_blank">
                 <div class="mb-3">
                     <label for="name" class="form-label">Your Name</label>
-                    <input type="text"name="name" class="form-control" id="name" placeholder="Jay Mehta">
+                    <input type="text"name="name" class="form-control" id="name" placeholder="Jay Mehta" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Your Email</label>
-                    <input type="email"name="email" class="form-control" id="email" placeholder="name@example.com">
+                    <input type="email"name="email" class="form-control" id="email" placeholder="name@example.com" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Your Message</label>
-                    <textarea class="form-control"name="message" id="message" rows="3"></textarea>
+                    <textarea class="form-control"name="message" id="message" rows="3" required></textarea>
                 </div>
                 <button id="submit" class="btn"  type="submit">Submit</button>
             </form>
         </div>
     </div>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-        }
-    </script> -->
 
     <!-- Footer Code -->
     <div id="footerDiv" class="text-center">
