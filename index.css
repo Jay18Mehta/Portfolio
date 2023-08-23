@@ -1,6 +1,6 @@
 /* dissable scrollbar */
 body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     color-scheme: only light;
 }
 
@@ -170,11 +170,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* position: fixed; */
-        /* bottom: 0px; */
+        position: fixed;
+        bottom: 0px;
         width: 300px;
         left: 50%;
-        /* translate:-50%; */
+        translate:-50%;
         height: 60px;
         background-color: #000000;
         border-top-right-radius: 20px;
