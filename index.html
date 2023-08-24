@@ -246,7 +246,7 @@
         });
         slide()
         function slide(){
-            const triggerBottom=window.innerHeight-10
+            const triggerBottom=window.innerHeight-150
             projects.forEach((project,idx)=>{
                 const boxTop = project.getBoundingClientRect().top;
                 if(boxTop<triggerBottom){
@@ -258,7 +258,7 @@
         }
         reveal()
         function reveal(){
-            const triggerBottom=window.innerHeight/5*5
+            const triggerBottom=window.innerHeight-150
             educations.forEach((education,idx)=>{
                 const boxTop = education.getBoundingClientRect().top;
                 if(boxTop<triggerBottom){
