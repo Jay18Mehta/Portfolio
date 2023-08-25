@@ -49,6 +49,8 @@
 
     <!-- Image code -->
     <div id="imageDiv">
+        <!-- Loader -->
+        <div id="preLoader"></div>
         <img src="./profile.jpg" class="mx-auto d-block" alt="Profile Image" id="profilePhoto">
         <hr id="hr">
     </div>
@@ -272,6 +274,15 @@
                 }
             })
         }
+    </script>
+
+    <!-- loader script -->
+    <script>
+        const loader = document.getElementById('preLoader')
+
+        window.addEventListener("load",function(){
+            loader.style.display="none"
+        })
     </script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

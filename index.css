@@ -185,3 +185,7 @@ body {
     }
 } 
 
+#preLoader{
+    background: #232323 url(./loader.gif) no-repeat center center;
+    height: 175px;
+}
