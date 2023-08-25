@@ -105,10 +105,10 @@ body {
     /* scale: 0.2; */
 }
 
-/* #project:nth-of-type(even){
-    transform-origin: bottom left;
-    transform: rotate(60deg);
-} */
+#project:nth-of-type(even){
+    transform: scale(0.1, 1);
+    opacity: 0;
+}
 
 #project.show{
     transform: rotate(0deg);
